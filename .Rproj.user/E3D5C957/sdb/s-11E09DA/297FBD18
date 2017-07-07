@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "---\ntitle: \"Volcano Plot\"\nauthor: \"Jens Hooge\"\ndate: 2017-07-07\ncategories: [\"R\"]\ntags: [\"R\", \"Visualization\", \"Library\", \"BioViz\"]\n---\n\n```{r setup, include=FALSE}\nknitr::opts_chunk$set(collapse = TRUE)\n```\n\n# Volcano Plot\n\nA volcano plot is a type of scatter-plot that is used to quickly identify changes in large data sets composed of replicate data. It plots significance versus fold-change on the y and x axes, respectively. These plots are increasingly common in omic experiments such as genomics, proteomics, and metabolomics where one often has a list of many thousands of replicate data points between two conditions and one wishes to quickly identify the most meaningful changes. A volcano plot combines a measure of statistical significance from a statistical test (e.g., a p value from an ANOVA model) with the magnitude of the change, enabling quick visual identification of those data-points (genes, etc.) that display large magnitude changes that are also statistically significant.\n\n```{r volcano_plot, tidy=FALSE}\nlibrary(BioViz)\ndata(iPSC)\ngeneral.volcano_plot(iPSC, title = \"Volcano Plot\", groups = c(\"Untreated\",\n  \"Treated\"), top_labeled = 0, xlabel = expression(log[2](\"Foldchange\")),\n  ylabel = expression(-log[10](\"p-value\")), xcutoff = c(-log2(4), log2(4)),\n  ycutoff = -log10(0.05), log1p = FALSE)\n```\n",
+    "created" : 1499438711078.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3772704516",
+    "id" : "297FBD18",
+    "lastKnownWriteTime" : 1499441884,
+    "last_content_update" : 1499441884888,
+    "path" : "~/workspace/R/projects/GraphWebsite/content/post/2015-07-23-r-rmarkdown.Rmd",
+    "project_path" : "content/post/2015-07-23-r-rmarkdown.Rmd",
+    "properties" : {
+    },
+    "relative_order" : 4,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}

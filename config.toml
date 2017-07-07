@@ -1,4 +1,5 @@
 theme = "hugo_theme_robust"
-baseURL = "http://example.org/"
+baseURL = "https://genomics-rstudio.bhc.cnb"
 languageCode = "en-us"
 title = "BioViz Graph Gallery"
+

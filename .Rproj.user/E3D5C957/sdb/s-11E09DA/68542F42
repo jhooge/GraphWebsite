@@ -1,21 +1,21 @@
 {
     "collab_server" : "",
-    "contents" : "library(blogdown)\nnew_site(\".\", theme=\"dim0627/hugo_theme_robust\")\n",
+    "contents" : "---\ntitle: About\nauthor: Jens Hooge\ndate: '2017-07-07'\nslug: about\ncategories: [\"R\"]\ntags: [\"R\", \"Visualization\", \"Library\", \"BioViz\"]\n---\n  \n```{r setup, include=FALSE}\nknitr::opts_chunk$set(collapse = TRUE)\n```\n\n# About\n\n## Description\nThis page accompanies the graphical visualization package BioViz.\nBioViz is a collection of visualization scripts used in the day to day work in the Biomarker group at RCSS Be aware that the package is still under development! If you encounter any errors or have suggestions please get in touch. \n\n## Author Information\nJens Hooge",
     "created" : 1499433106448.000,
-    "dirty" : true,
-    "encoding" : "",
+    "dirty" : false,
+    "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "4093045017",
+    "hash" : "3079813560",
     "id" : "68542F42",
-    "lastKnownWriteTime" : 0,
-    "last_content_update" : 1499433172891,
-    "path" : null,
-    "project_path" : null,
+    "lastKnownWriteTime" : 1499441837,
+    "last_content_update" : 1499441837175,
+    "path" : "~/workspace/R/projects/GraphWebsite/content/post/2017-07-07-about.Rmd",
+    "project_path" : "content/post/2017-07-07-about.Rmd",
     "properties" : {
         "tempName" : "Untitled1"
     },
     "relative_order" : 1,
     "source_on_save" : false,
     "source_window" : "",
-    "type" : "r_source"
+    "type" : "r_markdown"
 }

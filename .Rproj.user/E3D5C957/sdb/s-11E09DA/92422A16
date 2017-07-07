@@ -1,14 +1,14 @@
 {
     "collab_server" : "",
-    "contents" : "theme = \"hugo_theme_robust\"\nbaseURL = \"http://example.org/\"\nlanguageCode = \"en-us\"\ntitle = \"BioViz Graph Gallery\"\n",
+    "contents" : "theme = \"hugo_theme_robust\"\nbaseURL = \"https://genomics-rstudio.bhc.cnb\"\nlanguageCode = \"en-us\"\ntitle = \"BioViz Graph Gallery\"\n\n",
     "created" : 1499434724430.000,
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "2968022732",
+    "hash" : "4011718053",
     "id" : "92422A16",
-    "lastKnownWriteTime" : 1499435049,
-    "last_content_update" : 1499435049169,
+    "lastKnownWriteTime" : 1499442336,
+    "last_content_update" : 1499442336998,
     "path" : "~/workspace/R/projects/GraphWebsite/config.toml",
     "project_path" : "config.toml",
     "properties" : {
