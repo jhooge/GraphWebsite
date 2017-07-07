@@ -1,0 +1,38 @@
+---
+title: "Volcano Plot"
+author: "Jens Hooge"
+date: 2015-07-23T21:13:14-05:00
+categories: ["R"]
+tags: ["R", "Visualization", "Library", "BioViz"]
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(collapse = TRUE)
+```
+
+# Volcano Plot
+
+A volcano plot is a type of scatter-plot that is used to quickly identify changes in large data sets composed of replicate data. It plots significance versus fold-change on the y and x axes, respectively. These plots are increasingly common in omic experiments such as genomics, proteomics, and metabolomics where one often has a list of many thousands of replicate data points between two conditions and one wishes to quickly identify the most meaningful changes. A volcano plot combines a measure of statistical significance from a statistical test (e.g., a p value from an ANOVA model) with the magnitude of the change, enabling quick visual identification of those data-points (genes, etc.) that display large magnitude changes that are also statistically significant.
+
+```{r volcano_plot, fig.cap='A fancy volcano plot', tidy=FALSE}
+library(BioViz)
+data(iPSC)
+general.volcano_plot(iPSC, title = "Volcano Plot", groups = c("Untreated",
+  "Treated"), top_labeled = 0, xlabel = expression(log[2]("Foldchange")),
+  ylabel = expression(-log[10]("p-value")), xcutoff = c(-log2(4), log2(4)),
+  ycutoff = -log10(0.05), log1p = FALSE)
+```
+
+# Including Plots
+
+You can also embed plots. See Figure \@ref(fig:pie) for example:
+
+```{r pie, fig.cap='A fancy pie chart.', tidy=FALSE}
+par(mar = c(0, 1, 0, 1))
+pie(
+  c(280, 60, 20),
+  c('Sky', 'Sunny side of pyramid', 'Shady side of pyramid'),
+  col = c('#0292D8', '#F7EA39', '#C4B632'),
+  init.angle = -50, border = NA
+)
+```

@@ -1,0 +1,6 @@
+"0","library(BioViz)"
+"0","data(iPSC)"
+"0","general.volcano_plot(iPSC, title = ""Volcano Plot"", groups = c(""Untreated"","
+"0","  ""Treated""), top_labeled = 0, xlabel = expression(log[2](""Foldchange"")),"
+"0","  ylabel = expression(-log[10](""p-value"")), xcutoff = c(-log2(4), log2(4)),"
+"0","  ycutoff = -log10(0.05), log1p = FALSE)"

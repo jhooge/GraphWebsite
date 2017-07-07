@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "theme = \"hugo_theme_robust\"\nbaseURL = \"http://example.org/\"\nlanguageCode = \"en-us\"\ntitle = \"BioViz Graph Gallery\"\n",
+    "created" : 1499434724430.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2968022732",
+    "id" : "92422A16",
+    "lastKnownWriteTime" : 1499435049,
+    "last_content_update" : 1499435049169,
+    "path" : "~/workspace/R/projects/GraphWebsite/config.toml",
+    "project_path" : "config.toml",
+    "properties" : {
+    },
+    "relative_order" : 4,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "text"
+}
