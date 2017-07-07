@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>R on BioViz Graph Gallery</title>
-    <link>/categories/r/</link>
+    <link>http://bioviz.netlify.com/categories/r/</link>
     <description>Recent content in R on BioViz Graph Gallery</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 07 Jul 2017 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/categories/r/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://bioviz.netlify.com/categories/r/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>About</title>
-      <link>/post/about/</link>
+      <link>http://bioviz.netlify.com/post/about/</link>
       <pubDate>Fri, 07 Jul 2017 00:00:00 +0000</pubDate>
       
-      <guid>/post/about/</guid>
+      <guid>http://bioviz.netlify.com/post/about/</guid>
       <description>About Description This page accompanies the graphical visualization package BioViz. BioViz is a collection of visualization scripts used in the day to day work in the Biomarker group at RCSS Be aware that the package is still under development! If you encounter any errors or have suggestions please get in touch.
  Author Information Jens Hooge
   </description>
@@ -24,10 +24,10 @@
     
     <item>
       <title>Volcano Plot</title>
-      <link>/post/2015-07-23-r-rmarkdown/</link>
+      <link>http://bioviz.netlify.com/post/2015-07-23-r-rmarkdown/</link>
       <pubDate>Fri, 07 Jul 2017 00:00:00 +0000</pubDate>
       
-      <guid>/post/2015-07-23-r-rmarkdown/</guid>
+      <guid>http://bioviz.netlify.com/post/2015-07-23-r-rmarkdown/</guid>
       <description>Volcano Plot A volcano plot is a type of scatter-plot that is used to quickly identify changes in large data sets composed of replicate data. It plots significance versus fold-change on the y and x axes, respectively. These plots are increasingly common in omic experiments such as genomics, proteomics, and metabolomics where one often has a list of many thousands of replicate data points between two conditions and one wishes to quickly identify the most meaningful changes.</description>
     </item>
     
