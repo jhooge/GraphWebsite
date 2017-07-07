@@ -1,5 +1,5 @@
 theme = "hugo_theme_robust"
-baseURL = "https://genomics-rstudio.bhc.cnb"
+baseURL = "http://bioviz.netlify.com/"
 languageCode = "en-us"
 title = "BioViz Graph Gallery"
 

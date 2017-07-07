@@ -1,14 +1,14 @@
 {
     "collab_server" : "",
-    "contents" : "theme = \"hugo_theme_robust\"\nbaseURL = \"https://genomics-rstudio.bhc.cnb\"\nlanguageCode = \"en-us\"\ntitle = \"BioViz Graph Gallery\"\n\n",
+    "contents" : "theme = \"hugo_theme_robust\"\nbaseURL = \"http://bioviz.netlify.com/\"\nlanguageCode = \"en-us\"\ntitle = \"BioViz Graph Gallery\"\n\n",
     "created" : 1499434724430.000,
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "4011718053",
+    "hash" : "3718798172",
     "id" : "92422A16",
-    "lastKnownWriteTime" : 1499442336,
-    "last_content_update" : 1499442336998,
+    "lastKnownWriteTime" : 1499442790,
+    "last_content_update" : 1499442790062,
     "path" : "~/workspace/R/projects/GraphWebsite/config.toml",
     "project_path" : "config.toml",
     "properties" : {
