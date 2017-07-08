@@ -1,2 +1,5 @@
-/public
+public
 .Rproj.user
+*.Rproj
+.Rhistory
+.DS_Store
