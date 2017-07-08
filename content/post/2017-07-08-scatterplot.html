@@ -1,0 +1,87 @@
+---
+title: Scatterplot
+author: Jens Hooge
+date: '2017-07-08'
+slug: scatterplot
+categories:
+  - R
+tags:
+  - BioViz
+  - Library
+  - Visualization
+  - R
+draft: yes
+---
+
+
+
+<div id="definition" class="section level1">
+<h1>Definition</h1>
+<p>A scatter plot (also called a scatter graph, scatter chart, scattergram, or scatter diagram) is a type of plot or mathematical diagram using Cartesian coordinates to display values for typically two variables for a set of data. If the points are color-coded, one additional variable can be displayed. The data is displayed as a collection of points, each having the value of one variable determining the position on the horizontal axis and the value of the other variable determining the position on the vertical axis.</p>
+<pre class="r"><code>library(BioViz)
+## Warning: vorhergehender Import durch &#39;stats::filter&#39; während des Ladens von
+## &#39;BioViz&#39; ersetzt
+## Warning: vorhergehender Import durch &#39;stats::lag&#39; während des Ladens von
+## &#39;BioViz&#39; ersetzt
+n &lt;- 500
+x &lt;- 1:n
+y &lt;- x+rnorm(n, 0, 100)
+df &lt;- data.frame(x=x, y=y, 
+                 A=sample(c(&quot;a1&quot;, &quot;a2&quot;), n, replace = TRUE),
+                 B=sample(c(&quot;b1&quot;, &quot;b2&quot;), n, replace = TRUE))</code></pre>
+<div id="a-simple-ungrouped-scatter-plot-with-a-loess-fit" class="section level2">
+<h2>A simple ungrouped scatter plot with a loess fit</h2>
+<pre class="r"><code>general.scatter(df)
+## `geom_smooth()` using method = &#39;loess&#39;</code></pre>
+<p><img src="/post/2017-07-08-scatterplot_files/figure-html/simple-1.png" width="672" /></p>
+</div>
+<div id="a-grouped-scatter-plot-with-a-loess-fit" class="section level2">
+<h2>A grouped scatter plot with a loess fit</h2>
+<pre class="r"><code>general.scatter(df, by=&quot;A&quot;)
+## `geom_smooth()` using method = &#39;loess&#39;</code></pre>
+<p><img src="/post/2017-07-08-scatterplot_files/figure-html/grouped-1.png" width="672" /></p>
+</div>
+<div id="an-ungrouped-scatter-plot-and-a-marker-indicating-the-data-variance" class="section level2">
+<h2>An ungrouped scatter plot and a marker indicating the data variance</h2>
+<pre class="r"><code>general.scatter(df, fun=&quot;var&quot;)
+## `geom_smooth()` using method = &#39;loess&#39;</code></pre>
+<p><img src="/post/2017-07-08-scatterplot_files/figure-html/variance-1.png" width="672" /></p>
+</div>
+<div id="scatterplots-with-different-regression-fits" class="section level2">
+<h2>Scatterplots with different regression fits</h2>
+<div id="linear-fit" class="section level3">
+<h3>Linear Fit</h3>
+<pre class="r"><code>general.scatter(df, by=&quot;A&quot;, smooth.fun=&quot;lm&quot;)</code></pre>
+<p><img src="/post/2017-07-08-scatterplot_files/figure-html/linear-1.png" width="672" /></p>
+</div>
+<div id="robust-linear-fit" class="section level3">
+<h3>Robust Linear Fit</h3>
+<pre class="r"><code>library(MASS)
+general.scatter(df, by=&quot;A&quot;, smooth.fun=&quot;rlm&quot;)</code></pre>
+<p><img src="/post/2017-07-08-scatterplot_files/figure-html/robust_linear-1.png" width="672" /></p>
+</div>
+</div>
+<div id="user-defined-polynomial-fit" class="section level2">
+<h2>User defined polynomial fit</h2>
+<div id="degree-1-resulting-in-a-linear-fit" class="section level3">
+<h3>Degree = 1 resulting in a linear fit</h3>
+<pre class="r"><code>general.scatter(df, smooth.fun=&quot;glm&quot;, smooth.formula=y ~ poly(x, 1)) </code></pre>
+<p><img src="/post/2017-07-08-scatterplot_files/figure-html/poly1-1.png" width="672" /></p>
+</div>
+<div id="degree-2-resulting-in-a-quadratic-fit" class="section level3">
+<h3>Degree = 2 resulting in a quadratic fit</h3>
+<pre class="r"><code>general.scatter(df, smooth.fun=&quot;glm&quot;, smooth.formula=y ~ poly(x, 2))</code></pre>
+<p><img src="/post/2017-07-08-scatterplot_files/figure-html/unnamed-chunk-1-1.png" width="672" /></p>
+</div>
+</div>
+<div id="equivalently-for-grouped-scatterplots" class="section level2">
+<h2>Equivalently for grouped scatterplots</h2>
+<div id="degree-1-resulting-in-a-linear-fit-1" class="section level3">
+<h3>Degree = 1 resulting in a linear fit</h3>
+<pre class="r"><code>general.scatter(df, by=&quot;A&quot;, smooth.fun=&quot;glm&quot;, smooth.formula=y ~ poly(x, 1))</code></pre>
+<p><img src="/post/2017-07-08-scatterplot_files/figure-html/unnamed-chunk-2-1.png" width="672" /> ### Degree = 2 resulting in a quadratic fit</p>
+<pre class="r"><code>general.scatter(df, by=&quot;B&quot;, smooth.fun=&quot;glm&quot;, smooth.formula=y ~ poly(x, 2))</code></pre>
+<p><img src="/post/2017-07-08-scatterplot_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
+</div>
+</div>
+</div>
