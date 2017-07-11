@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Documentation on BioViz Graph Gallery</title>
+    <link>http://bioviz.netlify.com/categories/documentation/</link>
+    <description>Recent content in Documentation on BioViz Graph Gallery</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 07 Jul 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://bioviz.netlify.com/categories/documentation/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>About</title>
+      <link>http://bioviz.netlify.com/post/about/</link>
+      <pubDate>Fri, 07 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://bioviz.netlify.com/post/about/</guid>
+      <description>About Description This page accompanies the graphical visualization package BioViz. BioViz is a collection of visualization scripts used in the day to day work in the Biomarker group at RCSS Be aware that the package is still under development! If you encounter any errors or have suggestions please get in touch.
+ Author Information Jens Hooge
+  </description>
+    </item>
+    
+  </channel>
+</rss>

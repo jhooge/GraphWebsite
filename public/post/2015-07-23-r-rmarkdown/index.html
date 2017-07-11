@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
 <meta name="theme-color" content="#263238">
 
-<meta name="generator" content="Hugo 0.25" />
+<meta name="generator" content="Hugo 0.25.1" />
 
 <link rel="apple-touch-icon" href="http://bioviz.netlify.comimages/logo.png">
 
@@ -132,15 +132,24 @@
 <h1>Volcano Plot</h1>
 <p>A volcano plot is a type of scatter-plot that is used to quickly identify changes in large data sets composed of replicate data. It plots significance versus fold-change on the y and x axes, respectively. These plots are increasingly common in omic experiments such as genomics, proteomics, and metabolomics where one often has a list of many thousands of replicate data points between two conditions and one wishes to quickly identify the most meaningful changes. A volcano plot combines a measure of statistical significance from a statistical test (e.g., a p value from an ANOVA model) with the magnitude of the change, enabling quick visual identification of those data-points (genes, etc.) that display large magnitude changes that are also statistically significant.</p>
 <pre class="r"><code>library(BioViz)
-## Warning: replacing previous import &#39;dplyr::filter&#39; by &#39;stats::filter&#39; when
-## loading &#39;BioViz&#39;
-## Warning: replacing previous import &#39;dplyr::lag&#39; by &#39;stats::lag&#39; when
-## loading &#39;BioViz&#39;
+## Warning: vorhergehender Import durch &#39;utils::capture.output&#39; während des
+## Ladens von &#39;GGally&#39; ersetzt
+## Warning: vorhergehender Import durch &#39;utils::head&#39; während des Ladens von
+## &#39;GGally&#39; ersetzt
+## Warning: vorhergehender Import durch &#39;utils::installed.packages&#39; während
+## des Ladens von &#39;GGally&#39; ersetzt
+## Warning: vorhergehender Import durch &#39;utils::str&#39; während des Ladens von
+## &#39;GGally&#39; ersetzt
+## Warning: vorhergehender Import durch &#39;stats::filter&#39; während des Ladens von
+## &#39;BioViz&#39; ersetzt
+## Warning: vorhergehender Import durch &#39;stats::lag&#39; während des Ladens von
+## &#39;BioViz&#39; ersetzt
 data(iPSC)
 general.volcano_plot(iPSC, title = &quot;Volcano Plot&quot;, groups = c(&quot;Untreated&quot;,
   &quot;Treated&quot;), top_labeled = 0, xlabel = expression(log[2](&quot;Foldchange&quot;)),
   ylabel = expression(-log[10](&quot;p-value&quot;)), xcutoff = c(-log2(4), log2(4)),
-  ycutoff = -log10(0.05), log1p = FALSE)</code></pre>
+  ycutoff = -log10(0.05), log1p = FALSE)
+## Warning: Paket &#39;bindrcpp&#39; wurde unter R Version 3.2.5 erstellt</code></pre>
 <p><img src="/post/2015-07-23-r-rmarkdown_files/figure-html/volcano_plot-1.png" width="672" /></p>
 </div>
 </div>
