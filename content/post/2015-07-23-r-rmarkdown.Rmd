@@ -3,7 +3,7 @@ title: "Volcano Plot"
 author: "Jens Hooge"
 date: 2017-07-07
 categories: ["general", "visualization"]
-tags: ["Significance", "p-value" "Expression"]
+tags: ["Significance", "p-value", "Expression"]
 ---
 
 ```{r setup, include=FALSE}

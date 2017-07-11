@@ -6,20 +6,18 @@
     <description>Recent content in R on BioViz Graph Gallery</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 07 Jul 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 08 Jul 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/r/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>About</title>
-      <link>/post/about/</link>
-      <pubDate>Fri, 07 Jul 2017 00:00:00 +0000</pubDate>
+      <title>Scatterplot</title>
+      <link>/post/scatterplot/</link>
+      <pubDate>Sat, 08 Jul 2017 00:00:00 +0000</pubDate>
       
-      <guid>/post/about/</guid>
-      <description>About Description This page accompanies the graphical visualization package BioViz. BioViz is a collection of visualization scripts used in the day to day work in the Biomarker group at RCSS Be aware that the package is still under development! If you encounter any errors or have suggestions please get in touch.
- Author Information Jens Hooge
-  </description>
+      <guid>/post/scatterplot/</guid>
+      <description>Definition A scatter plot (also called a scatter graph, scatter chart, scattergram, or scatter diagram) is a type of plot or mathematical diagram using Cartesian coordinates to display values for typically two variables for a set of data. If the points are color-coded, one additional variable can be displayed. The data is displayed as a collection of points, each having the value of one variable determining the position on the horizontal axis and the value of the other variable determining the position on the vertical axis.</description>
     </item>
     
     <item>

@@ -2,4 +2,3 @@ theme = "hugo_theme_robust"
 baseURL = "http://bioviz.netlify.com"
 languageCode = "en-us"
 title = "BioViz Graph Gallery"
-
