@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Visualization on BioViz Graph Gallery</title>
-    <link>http://bioviz.netlify.com/categories/visualization/</link>
+    <link>/categories/visualization/</link>
     <description>Recent content in Visualization on BioViz Graph Gallery</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 07 Jul 2017 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://bioviz.netlify.com/categories/visualization/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/categories/visualization/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Volcano Plot</title>
-      <link>http://bioviz.netlify.com/post/2015-07-23-r-rmarkdown/</link>
+      <link>/post/2015-07-23-r-rmarkdown/</link>
       <pubDate>Fri, 07 Jul 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://bioviz.netlify.com/post/2015-07-23-r-rmarkdown/</guid>
+      <guid>/post/2015-07-23-r-rmarkdown/</guid>
       <description>Volcano Plot A volcano plot is a type of scatter-plot that is used to quickly identify changes in large data sets composed of replicate data. It plots significance versus fold-change on the y and x axes, respectively. These plots are increasingly common in omic experiments such as genomics, proteomics, and metabolomics where one often has a list of many thousands of replicate data points between two conditions and one wishes to quickly identify the most meaningful changes.</description>
     </item>
     

@@ -3,70 +3,105 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://bioviz.netlify.com/post/about/</loc>
+    <loc>/post/scatterplot/</loc>
+    <lastmod>2017-07-08T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/about/</loc>
     <lastmod>2017-07-07T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://bioviz.netlify.com/post/2015-07-23-r-rmarkdown/</loc>
+    <loc>/post/2015-07-23-r-rmarkdown/</loc>
     <lastmod>2017-07-07T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://bioviz.netlify.com/</loc>
+    <loc>/</loc>
+    <lastmod>2017-07-08T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/bioviz/</loc>
+    <lastmod>2017-07-08T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/documentation/</loc>
     <lastmod>2017-07-07T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://bioviz.netlify.com/categories/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://bioviz.netlify.com/categories/documentation/</loc>
+    <loc>/tags/expression/</loc>
     <lastmod>2017-07-07T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://bioviz.netlify.com/tags/expression/</loc>
+    <loc>/categories/general/</loc>
     <lastmod>2017-07-07T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://bioviz.netlify.com/categories/general/</loc>
+    <loc>/tags/library/</loc>
+    <lastmod>2017-07-08T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/p-value/</loc>
     <lastmod>2017-07-07T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://bioviz.netlify.com/tags/p-value/</loc>
+    <loc>/post/</loc>
+    <lastmod>2017-07-08T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/r/</loc>
+    <lastmod>2017-07-08T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/r/</loc>
+    <lastmod>2017-07-08T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/significance/</loc>
     <lastmod>2017-07-07T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://bioviz.netlify.com/post/</loc>
-    <lastmod>2017-07-07T00:00:00+00:00</lastmod>
+    <loc>/tags/</loc>
+    <lastmod>2017-07-08T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://bioviz.netlify.com/tags/significance/</loc>
-    <lastmod>2017-07-07T00:00:00+00:00</lastmod>
+    <loc>/tags/visualization/</loc>
+    <lastmod>2017-07-08T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://bioviz.netlify.com/tags/</loc>
-    <lastmod>2017-07-07T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://bioviz.netlify.com/categories/visualization/</loc>
+    <loc>/categories/visualization/</loc>
     <lastmod>2017-07-07T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
