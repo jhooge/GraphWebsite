@@ -45,6 +45,7 @@ general.scatter(df, fun="var")
 
 ## Scatterplots with different regression fits
 ### Linear Fit
+
 ```{r linear, tidy=FALSE}
 general.scatter(df, by="A", smooth.fun="lm")
 ```
@@ -71,10 +72,12 @@ general.scatter(df, smooth.fun="glm", smooth.formula=y ~ poly(x, 2))
 ```{r}
 general.scatter(df, by="A", smooth.fun="glm", smooth.formula=y ~ poly(x, 1))
 ```
+
 ### Degree = 2 resulting in a quadratic fit
 ```{r}
 general.scatter(df, by="B", smooth.fun="glm", smooth.formula=y ~ poly(x, 2))
 ```
+
 ### Including a density contour
 ```{r}
 general.scatter(df, by="B", smooth.fun="glm", smooth.formula=y ~ poly(x, 2),
