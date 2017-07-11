@@ -1,0 +1,85 @@
+---
+title: Scatterplot
+author: Jens Hooge
+date: '2017-07-08'
+slug: scatterplot
+categories:
+  - R
+tags:
+  - BioViz
+  - Library
+  - Visualization
+  - R
+draft: yes
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(collapse = TRUE)
+```
+
+# Definition
+
+A scatter plot (also called a scatter graph, scatter chart, scattergram, or scatter diagram) is a type of plot or mathematical diagram using Cartesian coordinates to display values for typically two variables for a set of data. If the points are color-coded, one additional variable can be displayed. The data is displayed as a collection of points, each having the value of one variable determining the position on the horizontal axis and the value of the other variable determining the position on the vertical axis.
+
+```{r scatter_plot, tidy=FALSE}
+library(BioViz)
+n <- 500
+x <- 1:n
+y <- x+rnorm(n, 0, 100)
+df <- data.frame(x=x, y=y, 
+                 A=sample(c("a1", "a2"), n, replace = TRUE),
+                 B=sample(c("b1", "b2"), n, replace = TRUE))
+```
+
+## A simple ungrouped scatter plot with a loess fit
+```{r simple, tidy=FALSE}
+general.scatter(df)
+```
+
+## A grouped scatter plot with a loess fit
+```{r grouped, tidy=FALSE}
+general.scatter(df, by="A")
+```
+
+## An ungrouped scatter plot and a marker indicating the data variance
+```{r variance, tidy=FALSE}
+general.scatter(df, fun="var")
+```
+
+## Scatterplots with different regression fits
+### Linear Fit
+```{r linear, tidy=FALSE}
+general.scatter(df, by="A", smooth.fun="lm")
+```
+
+### Robust Linear Fit
+```{r robust_linear, tidy=FALSE}
+library(MASS)
+general.scatter(df, by="A", smooth.fun="rlm")
+```
+
+## User defined polynomial fit
+### Degree = 1 resulting in a linear fit
+```{r poly1}
+general.scatter(df, smooth.fun="glm", smooth.formula=y ~ poly(x, 1)) 
+```
+
+### Degree = 2 resulting in a quadratic fit
+```{r}
+general.scatter(df, smooth.fun="glm", smooth.formula=y ~ poly(x, 2))
+```
+
+## Equivalently for grouped scatterplots
+### Degree = 1 resulting in a linear fit
+```{r}
+general.scatter(df, by="A", smooth.fun="glm", smooth.formula=y ~ poly(x, 1))
+```
+### Degree = 2 resulting in a quadratic fit
+```{r}
+general.scatter(df, by="B", smooth.fun="glm", smooth.formula=y ~ poly(x, 2))
+```
+### Including a density contour
+```{r}
+general.scatter(df, by="B", smooth.fun="glm", smooth.formula=y ~ poly(x, 2),
+                density=T, legend.pos="bottom")
+```
