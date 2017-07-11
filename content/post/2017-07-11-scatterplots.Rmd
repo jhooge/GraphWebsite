@@ -1,15 +1,12 @@
 ---
-title: Scatterplot
+title: Scatterplots
 author: Jens Hooge
-date: '2017-07-08'
-slug: scatterplot
+date: '2017-07-11'
+slug: scatterplots
 categories:
-  - R
-tags:
-  - BioViz
-  - Library
-  - Visualization
-  - R
+  - general
+  - visualization
+tags: ["exploration"]
 draft: yes
 ---
 
