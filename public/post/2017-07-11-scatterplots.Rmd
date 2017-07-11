@@ -21,8 +21,8 @@ A scatter plot (also called a scatter graph, scatter chart, scattergram, or scat
 ```{r scatter_plot, tidy=FALSE}
 library(BioViz)
 n <- 500
-x <- 1:n
-y <- x+rnorm(n, 0, 100)
+x <- rnorm(n)
+y <- rnorm(n)+x^2
 df <- data.frame(x=x, y=y, 
                  A=sample(c("a1", "a2"), n, replace = TRUE),
                  B=sample(c("b1", "b2"), n, replace = TRUE))

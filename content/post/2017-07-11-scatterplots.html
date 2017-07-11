@@ -29,8 +29,8 @@ draft: yes
 ## Warning: vorhergehender Import durch &#39;stats::lag&#39; während des Ladens von
 ## &#39;BioViz&#39; ersetzt
 n &lt;- 500
-x &lt;- 1:n
-y &lt;- x+rnorm(n, 0, 100)
+x &lt;- rnorm(n)
+y &lt;- rnorm(n)+x^2
 df &lt;- data.frame(x=x, y=y, 
                  A=sample(c(&quot;a1&quot;, &quot;a2&quot;), n, replace = TRUE),
                  B=sample(c(&quot;b1&quot;, &quot;b2&quot;), n, replace = TRUE))</code></pre>
