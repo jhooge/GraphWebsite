@@ -2,8 +2,8 @@
 title: "Volcano Plot"
 author: "Jens Hooge"
 date: 2017-07-07
-categories: ["R"]
-tags: ["R", "Visualization", "Library", "BioViz"]
+categories: ["general", "visualization"]
+tags: ["Significance", "p-value" "Expression"]
 ---
 
 ```{r setup, include=FALSE}

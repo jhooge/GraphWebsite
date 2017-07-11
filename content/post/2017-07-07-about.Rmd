@@ -3,8 +3,8 @@ title: About
 author: Jens Hooge
 date: '2017-07-07'
 slug: about
-categories: ["R"]
-tags: ["R", "Visualization", "Library", "BioViz"]
+categories: ["documentation"]
+tags: []
 ---
   
 ```{r setup, include=FALSE}
@@ -15,7 +15,7 @@ knitr::opts_chunk$set(collapse = TRUE)
 
 ## Description
 This page accompanies the graphical visualization package BioViz.
-BioViz is a collection of visualization scripts used in the day to day work in the Biomarker group at RCSS Be aware that the package is still under development! If you encounter any errors or have suggestions please get in touch. 
+BioViz is a collection of visualization scripts used in the day to day work in the Biomarker group at RCSS Be aware that the package is still under development! If you encounter any errors or have suggestions please get in touch.
 
 ## Author Information
 Jens Hooge

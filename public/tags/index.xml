@@ -2,48 +2,48 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on BioViz Graph Gallery</title>
-    <link>http://bioviz.netlify.com/tags/</link>
+    <link>/tags/</link>
     <description>Recent content in Tags on BioViz Graph Gallery</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 07 Jul 2017 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://bioviz.netlify.com/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Bioviz</title>
-      <link>http://bioviz.netlify.com/tags/bioviz/</link>
+      <link>/tags/bioviz/</link>
       <pubDate>Fri, 07 Jul 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://bioviz.netlify.com/tags/bioviz/</guid>
+      <guid>/tags/bioviz/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Library</title>
-      <link>http://bioviz.netlify.com/tags/library/</link>
+      <link>/tags/library/</link>
       <pubDate>Fri, 07 Jul 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://bioviz.netlify.com/tags/library/</guid>
+      <guid>/tags/library/</guid>
       <description></description>
     </item>
     
     <item>
       <title>R</title>
-      <link>http://bioviz.netlify.com/tags/r/</link>
+      <link>/tags/r/</link>
       <pubDate>Fri, 07 Jul 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://bioviz.netlify.com/tags/r/</guid>
+      <guid>/tags/r/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Visualization</title>
-      <link>http://bioviz.netlify.com/tags/visualization/</link>
+      <link>/tags/visualization/</link>
       <pubDate>Fri, 07 Jul 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://bioviz.netlify.com/tags/visualization/</guid>
+      <guid>/tags/visualization/</guid>
       <description></description>
     </item>
     
