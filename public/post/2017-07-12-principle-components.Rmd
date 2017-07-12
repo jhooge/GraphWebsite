@@ -34,7 +34,6 @@ X <- fiveClass[, 2:ncol(fiveClass)]
 
 ## Default Pairs Plot of the First 3 Principal Components
 ```{r errorbars, tidy=FALSE}
-#' dimred.plot_pca(X)
 dimred.plot_pca(X)
 ```
 
