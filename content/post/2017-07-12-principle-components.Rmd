@@ -3,6 +3,7 @@ title: Principle Components
 author: Jens Hooge
 date: '2017-07-12'
 slug: principle-components
+thumbnail: "images/labeled_pca.png"
 categories:
   - dimensionality_reduction
 tags:
@@ -33,16 +34,16 @@ X <- fiveClass[, 2:ncol(fiveClass)]
 ```
 
 ## Default Pairs Plot of the First 3 Principal Components
-```{r errorbars, tidy=FALSE}
+```{r default_pca, tidy=FALSE}
 dimred.plot_pca(X)
 ```
 
 ## Pairs Plot of the First 3 Principal Components Labeled by Class Vector
-```{r error_transform, tidy=FALSE}
+```{r labeled_pca, tidy=FALSE}
 dimred.plot_pca(X, Y)
 ```
 
 ## Varying the Number of Components
-```{r facetted, tidy=FALSE}
+```{r vary_comp_pca, tidy=FALSE}
 dimred.plot_pca(X, Y, ncomp=5)
 ```

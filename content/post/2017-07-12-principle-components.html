@@ -3,6 +3,7 @@ title: Principle Components
 author: Jens Hooge
 date: '2017-07-12'
 slug: principle-components
+thumbnail: "images/labeled_pca.png"
 categories:
   - dimensionality_reduction
 tags:
@@ -33,15 +34,15 @@ X &lt;- fiveClass[, 2:ncol(fiveClass)]</code></pre>
 <div id="default-pairs-plot-of-the-first-3-principal-components" class="section level2">
 <h2>Default Pairs Plot of the First 3 Principal Components</h2>
 <pre class="r"><code>dimred.plot_pca(X)</code></pre>
-<p><img src="/post/2017-07-12-principle-components_files/figure-html/errorbars-1.png" width="672" /></p>
+<p><img src="/post/2017-07-12-principle-components_files/figure-html/default_pca-1.png" width="672" /></p>
 </div>
 <div id="pairs-plot-of-the-first-3-principal-components-labeled-by-class-vector" class="section level2">
 <h2>Pairs Plot of the First 3 Principal Components Labeled by Class Vector</h2>
 <pre class="r"><code>dimred.plot_pca(X, Y)</code></pre>
-<p><img src="/post/2017-07-12-principle-components_files/figure-html/error_transform-1.png" width="672" /></p>
+<p><img src="/post/2017-07-12-principle-components_files/figure-html/labeled_pca-1.png" width="672" /></p>
 </div>
 <div id="varying-the-number-of-components" class="section level2">
 <h2>Varying the Number of Components</h2>
 <pre class="r"><code>dimred.plot_pca(X, Y, ncomp=5)</code></pre>
-<p><img src="/post/2017-07-12-principle-components_files/figure-html/facetted-1.png" width="672" /></p>
+<p><img src="/post/2017-07-12-principle-components_files/figure-html/vary_comp_pca-1.png" width="672" /></p>
 </div>
