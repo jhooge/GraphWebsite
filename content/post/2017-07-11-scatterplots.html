@@ -3,6 +3,7 @@ title: Scatterplots
 author: Jens Hooge
 date: '2017-07-11'
 slug: scatterplot
+thumbnail: "images/density_contour.png"
 categories: ["general", "visualization"]
 tags: ["exploration"]
 draft: no
@@ -57,12 +58,12 @@ general.scatter(df, by=&quot;A&quot;, smooth.fun=&quot;rlm&quot;)</code></pre>
 <div id="degree-1-resulting-in-a-linear-fit" class="section level3">
 <h3>Degree = 1 resulting in a linear fit</h3>
 <pre class="r"><code>general.scatter(df, smooth.fun=&quot;glm&quot;, smooth.formula=y ~ poly(x, 1)) </code></pre>
-<p><img src="/post/2017-07-11-scatterplots_files/figure-html/poly1-1.png" width="672" /></p>
+<p><img src="/post/2017-07-11-scatterplots_files/figure-html/linear_fit-1.png" width="672" /></p>
 </div>
 <div id="degree-2-resulting-in-a-quadratic-fit" class="section level3">
 <h3>Degree = 2 resulting in a quadratic fit</h3>
 <pre class="r"><code>general.scatter(df, smooth.fun=&quot;glm&quot;, smooth.formula=y ~ poly(x, 2))</code></pre>
-<p><img src="/post/2017-07-11-scatterplots_files/figure-html/unnamed-chunk-1-1.png" width="672" /></p>
+<p><img src="/post/2017-07-11-scatterplots_files/figure-html/quadratic_fit-1.png" width="672" /></p>
 </div>
 </div>
 <div id="equivalently-for-grouped-scatterplots" class="section level2">
@@ -70,18 +71,18 @@ general.scatter(df, by=&quot;A&quot;, smooth.fun=&quot;rlm&quot;)</code></pre>
 <div id="degree-1-resulting-in-a-linear-fit-1" class="section level3">
 <h3>Degree = 1 resulting in a linear fit</h3>
 <pre class="r"><code>general.scatter(df, by=&quot;A&quot;, smooth.fun=&quot;glm&quot;, smooth.formula=y ~ poly(x, 1))</code></pre>
-<p><img src="/post/2017-07-11-scatterplots_files/figure-html/unnamed-chunk-2-1.png" width="672" /></p>
+<p><img src="/post/2017-07-11-scatterplots_files/figure-html/linear_grouped-1.png" width="672" /></p>
 </div>
 <div id="degree-2-resulting-in-a-quadratic-fit-1" class="section level3">
 <h3>Degree = 2 resulting in a quadratic fit</h3>
 <pre class="r"><code>general.scatter(df, by=&quot;B&quot;, smooth.fun=&quot;glm&quot;, smooth.formula=y ~ poly(x, 2))</code></pre>
-<p><img src="/post/2017-07-11-scatterplots_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
+<p><img src="/post/2017-07-11-scatterplots_files/figure-html/quadratic_grouped-1.png" width="672" /></p>
 </div>
 <div id="including-a-density-contour" class="section level3">
 <h3>Including a density contour</h3>
 <pre class="r"><code>general.scatter(df, by=&quot;B&quot;, smooth.fun=&quot;glm&quot;, smooth.formula=y ~ poly(x, 2),
                 density=T, legend.pos=&quot;bottom&quot;)</code></pre>
-<p><img src="/post/2017-07-11-scatterplots_files/figure-html/unnamed-chunk-4-1.png" width="672" /></p>
+<p><img src="/post/2017-07-11-scatterplots_files/figure-html/density_contour-1.png" width="672" /></p>
 </div>
 </div>
 </div>

@@ -3,6 +3,7 @@ title: Scatterplots
 author: Jens Hooge
 date: '2017-07-11'
 slug: scatterplot
+thumbnail: "images/density_contour.png"
 categories: ["general", "visualization"]
 tags: ["exploration"]
 draft: no
@@ -56,28 +57,28 @@ general.scatter(df, by="A", smooth.fun="rlm")
 
 ## User defined polynomial fit
 ### Degree = 1 resulting in a linear fit
-```{r poly1}
+```{r linear_fit, tidy=FALSE}
 general.scatter(df, smooth.fun="glm", smooth.formula=y ~ poly(x, 1)) 
 ```
 
 ### Degree = 2 resulting in a quadratic fit
-```{r}
+```{r quadratic_fit, tidy=FALSE}
 general.scatter(df, smooth.fun="glm", smooth.formula=y ~ poly(x, 2))
 ```
 
 ## Equivalently for grouped scatterplots
 ### Degree = 1 resulting in a linear fit
-```{r}
+```{r linear_grouped, tidy=FALSE}
 general.scatter(df, by="A", smooth.fun="glm", smooth.formula=y ~ poly(x, 1))
 ```
 
 ### Degree = 2 resulting in a quadratic fit
-```{r}
+```{r, quadratic_grouped, tidy=FALSE}
 general.scatter(df, by="B", smooth.fun="glm", smooth.formula=y ~ poly(x, 2))
 ```
 
 ### Including a density contour
-```{r}
+```{r density_contour, tidy=FALSE}
 general.scatter(df, by="B", smooth.fun="glm", smooth.formula=y ~ poly(x, 2),
                 density=T, legend.pos="bottom")
 ```
