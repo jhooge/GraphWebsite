@@ -3,7 +3,7 @@ title: "Volcano Plot"
 author: "Jens Hooge"
 date: 2017-07-07
 slug: volcano_plot
-thumbnail: "images/volcano.png"
+thumbnail: "images/volcano_plot.png"
 categories: ["general", "visualization"]
 tags: ["Significance", "p-value", "Expression"]
 draft: no
