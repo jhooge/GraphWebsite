@@ -2,18 +2,11 @@
 title: "Volcano Plot"
 author: "Jens Hooge"
 date: 2017-07-07
+slug: volcano_plot
 thumbnail: "images/volcano.png"
 categories: ["general", "visualization"]
 tags: ["Significance", "p-value", "Expression"]
----
-
----
-title: "Volcano Plot"
-author: "Jens Hooge"
-date: 2017-07-07
-thumbnail: "images/volcano.png"
-categories: ["general", "visualization"]
-tags: ["Significance", "p-value", "Expression"]
+draft: no
 ---
 
 
@@ -54,4 +47,8 @@ general.volcano_plot(iPSC)
 </div>
 <div id="volcano-plot-annotated-by-top10-most-significant-samples-and-transformed-y-axis-by-log1x" class="section level2">
 <h2>Volcano Plot annotated by Top10 most Significant Samples and transformed y-axis by log(1+x)</h2>
-<pre class="r"><code>general.volcano_plot(iPSC, top_labeled=
+<pre class="r"><code>general.volcano_plot(iPSC, top_labeled=10, log1p=TRUE)
+## Selecting by pvalue</code></pre>
+<p><img src="/post/2015-07-23-r-rmarkdown_files/figure-html/axis_transform-1.png" width="672" /></p>
+</div>
+</div>

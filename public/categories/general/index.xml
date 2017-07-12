@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>General on BioViz Graph Gallery</title>
-    <link>/categories/general/</link>
+    <link>http://bioviz.netlify.com/categories/general/</link>
     <description>Recent content in General on BioViz Graph Gallery</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 11 Jul 2017 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/categories/general/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://bioviz.netlify.com/categories/general/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Scatterplots</title>
-      <link>/post/scatterplots/</link>
+      <link>http://bioviz.netlify.com/post/scatterplot/</link>
       <pubDate>Tue, 11 Jul 2017 00:00:00 +0000</pubDate>
       
-      <guid>/post/scatterplots/</guid>
+      <guid>http://bioviz.netlify.com/post/scatterplot/</guid>
       <description>Definition A scatter plot (also called a scatter graph, scatter chart, scattergram, or scatter diagram) is a type of plot or mathematical diagram using Cartesian coordinates to display values for typically two variables for a set of data. If the points are color-coded, one additional variable can be displayed. The data is displayed as a collection of points, each having the value of one variable determining the position on the horizontal axis and the value of the other variable determining the position on the vertical axis.</description>
     </item>
     
     <item>
       <title>Volcano Plot</title>
-      <link>/post/2015-07-23-r-rmarkdown/</link>
+      <link>http://bioviz.netlify.com/post/volcano_plot/</link>
       <pubDate>Fri, 07 Jul 2017 00:00:00 +0000</pubDate>
       
-      <guid>/post/2015-07-23-r-rmarkdown/</guid>
-      <description>--- title: &#34;Volcano Plot&#34; author: &#34;Jens Hooge&#34; date: 2017-07-07 thumbnail: &#34;images/volcano.png&#34; categories: [&#34;general&#34;, &#34;visualization&#34;] tags: [&#34;Significance&#34;, &#34;p-value&#34;, &#34;Expression&#34;] --- Volcano Plot A volcano plot is a type of scatter-plot that is used to quickly identify changes in large data sets composed of replicate data. It plots significance versus fold-change on the y and x axes, respectively. These plots are increasingly common in omic experiments such as genomics, proteomics, and metabolomics where one often has a list of many thousands of replicate data points between two conditions and one wishes to quickly identify the most meaningful changes.</description>
+      <guid>http://bioviz.netlify.com/post/volcano_plot/</guid>
+      <description>Volcano Plot A volcano plot is a type of scatter-plot that is used to quickly identify changes in large data sets composed of replicate data. It plots significance versus fold-change on the y and x axes, respectively. These plots are increasingly common in omic experiments such as genomics, proteomics, and metabolomics where one often has a list of many thousands of replicate data points between two conditions and one wishes to quickly identify the most meaningful changes.</description>
     </item>
     
   </channel>
