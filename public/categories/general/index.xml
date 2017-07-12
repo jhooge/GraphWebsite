@@ -26,7 +26,7 @@
       <pubDate>Fri, 07 Jul 2017 00:00:00 +0000</pubDate>
       
       <guid>/post/2015-07-23-r-rmarkdown/</guid>
-      <description>Volcano Plot A volcano plot is a type of scatter-plot that is used to quickly identify changes in large data sets composed of replicate data. It plots significance versus fold-change on the y and x axes, respectively. These plots are increasingly common in omic experiments such as genomics, proteomics, and metabolomics where one often has a list of many thousands of replicate data points between two conditions and one wishes to quickly identify the most meaningful changes.</description>
+      <description>--- title: &#34;Volcano Plot&#34; author: &#34;Jens Hooge&#34; date: 2017-07-07 thumbnail: &#34;images/volcano.png&#34; categories: [&#34;general&#34;, &#34;visualization&#34;] tags: [&#34;Significance&#34;, &#34;p-value&#34;, &#34;Expression&#34;] --- Volcano Plot A volcano plot is a type of scatter-plot that is used to quickly identify changes in large data sets composed of replicate data. It plots significance versus fold-change on the y and x axes, respectively. These plots are increasingly common in omic experiments such as genomics, proteomics, and metabolomics where one often has a list of many thousands of replicate data points between two conditions and one wishes to quickly identify the most meaningful changes.</description>
     </item>
     
   </channel>
