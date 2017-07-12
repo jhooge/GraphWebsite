@@ -6,10 +6,19 @@
     <description>Recent content in Posts on BioViz Graph Gallery</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 11 Jul 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 12 Jul 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Lineplots</title>
+      <link>/post/lineplots/</link>
+      <pubDate>Wed, 12 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/post/lineplots/</guid>
+      <description>Generate Data library(BioViz) ## Warning: vorhergehender Import durch &amp;#39;utils::capture.output&amp;#39; während des ## Ladens von &amp;#39;GGally&amp;#39; ersetzt ## Warning: vorhergehender Import durch &amp;#39;utils::head&amp;#39; während des Ladens von ## &amp;#39;GGally&amp;#39; ersetzt ## Warning: vorhergehender Import durch &amp;#39;utils::installed.packages&amp;#39; während ## des Ladens von &amp;#39;GGally&amp;#39; ersetzt ## Warning: vorhergehender Import durch &amp;#39;utils::str&amp;#39; während des Ladens von ## &amp;#39;GGally&amp;#39; ersetzt ## Warning: vorhergehender Import durch &amp;#39;stats::filter&amp;#39; während des Ladens von ## &amp;#39;BioViz&amp;#39; ersetzt ## Warning: vorhergehender Import durch &amp;#39;stats::lag&amp;#39; während des Ladens von ## &amp;#39;BioViz&amp;#39; ersetzt library(reshape2) ## Warning: Paket &amp;#39;reshape2&amp;#39; wurde unter R Version 3.</description>
+    </item>
     
     <item>
       <title>Scatterplots</title>

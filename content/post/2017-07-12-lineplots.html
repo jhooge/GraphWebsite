@@ -1,0 +1,75 @@
+---
+title: Lineplots
+author: Jens Hooge
+date: '2017-07-12'
+slug: lineplots
+categories:
+  - general
+tags:
+  - exploration
+draft: no
+---
+
+
+
+<div id="generate-data" class="section level2">
+<h2>Generate Data</h2>
+<pre class="r"><code>library(BioViz)
+## Warning: vorhergehender Import durch &#39;utils::capture.output&#39; während des
+## Ladens von &#39;GGally&#39; ersetzt
+## Warning: vorhergehender Import durch &#39;utils::head&#39; während des Ladens von
+## &#39;GGally&#39; ersetzt
+## Warning: vorhergehender Import durch &#39;utils::installed.packages&#39; während
+## des Ladens von &#39;GGally&#39; ersetzt
+## Warning: vorhergehender Import durch &#39;utils::str&#39; während des Ladens von
+## &#39;GGally&#39; ersetzt
+## Warning: vorhergehender Import durch &#39;stats::filter&#39; während des Ladens von
+## &#39;BioViz&#39; ersetzt
+## Warning: vorhergehender Import durch &#39;stats::lag&#39; während des Ladens von
+## &#39;BioViz&#39; ersetzt
+library(reshape2)
+## Warning: Paket &#39;reshape2&#39; wurde unter R Version 3.2.5 erstellt
+library(ggplot2)
+## Warning: Paket &#39;ggplot2&#39; wurde unter R Version 3.2.5 erstellt
+n=7
+df &lt;- data.frame(Dose1=exp((1/2)*1:n),
+                 Dose2=exp((1/3)*1:n),
+                 Dose3=exp((1/4)*1:n),
+                 Dose4=exp((1/5)*1:n),
+                 Dose5=exp((1/6)*1:n),
+                 Dose6=exp((1/7)*1:n),
+                 Visit=1:n)
+df &lt;- melt(df, id=c(&quot;Visit&quot;))
+colnames(df) &lt;- c(&quot;Visit&quot;, &quot;Dose&quot;, &quot;Measure&quot;) </code></pre>
+</div>
+<div id="lineplot-with-errorbars" class="section level2">
+<h2>Lineplot with Errorbars</h2>
+<pre class="r"><code>general.lineplot(df, upper.err=1, lower.err=1, var.type=&quot;errorbar&quot;)
+## Warning: Ignoring unknown aesthetics: fill</code></pre>
+<p><img src="/post/2017-07-12-lineplots_files/figure-html/errorbars-1.png" width="672" /></p>
+</div>
+<div id="lineplot-with-errorbars-and-log-transformed-y-axis" class="section level2">
+<h2>Lineplot with Errorbars and log transformed y-axis</h2>
+<pre class="r"><code>general.lineplot(df, upper.err=1, lower.err=1, var.type=&quot;errorbar&quot;, y.log10trans = T)
+## Warning: Ignoring unknown aesthetics: fill</code></pre>
+<p><img src="/post/2017-07-12-lineplots_files/figure-html/error_transform-1.png" width="672" /></p>
+</div>
+<div id="facetted-lineplot" class="section level2">
+<h2>Facetted Lineplot</h2>
+<pre class="r"><code>general.lineplot(df, by=&quot;Dose&quot;, facet.row=3, upper.err=1, lower.err=1,
+                 var.type=&quot;errorbar&quot;, y.log10trans = T)
+## Warning: Ignoring unknown aesthetics: fill</code></pre>
+<p><img src="/post/2017-07-12-lineplots_files/figure-html/facetted-1.png" width="672" /></p>
+</div>
+<div id="lineplot-with-error-ribbons" class="section level2">
+<h2>Lineplot with Error Ribbons</h2>
+<pre class="r"><code>general.lineplot(df, by=&quot;Dose&quot;, upper.err=1, lower.err=1, var.type=&quot;ribbon&quot;)
+## Warning: Ignoring unknown aesthetics: fill</code></pre>
+<p><img src="/post/2017-07-12-lineplots_files/figure-html/ribbon-1.png" width="672" /></p>
+</div>
+<div id="lineplot-with-error-ribbon-and-log-transformed-y-axis" class="section level2">
+<h2>Lineplot with Error Ribbon and log transformed y-axis</h2>
+<pre class="r"><code>general.lineplot(df, by=&quot;Dose&quot;, upper.err=1, lower.err=1, var.type=&quot;ribbon&quot;, y.log10trans = T)
+## Warning: Ignoring unknown aesthetics: fill</code></pre>
+<p><img src="/post/2017-07-12-lineplots_files/figure-html/ribbon_transform-1.png" width="672" /></p>
+</div>
