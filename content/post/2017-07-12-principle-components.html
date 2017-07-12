@@ -12,25 +12,20 @@ draft: no
 
 
 
+<div id="component-plot" class="section level2">
+<h2>Component Plot</h2>
+<p>The components of the PCA dimensionality reduction will be displayed in a pairs plot. Each of the components are plottet against each other.</p>
+<ul>
+<li>The lower diagonal shows the data points projected to the respective two dimensional component space.</li>
+<li>The upper diagonal shows a contour plot of the data projected the respective two dimensional component space.</li>
+<li>The diagonal shows a density plot of the projection of variables to a principal component axis.</li>
+</ul>
+</div>
 <div id="load-data" class="section level2">
 <h2>Load data</h2>
 <pre class="r"><code>library(BioViz)
-## Warning: vorhergehender Import durch &#39;utils::capture.output&#39; während des
-## Ladens von &#39;GGally&#39; ersetzt
-## Warning: vorhergehender Import durch &#39;utils::head&#39; während des Ladens von
-## &#39;GGally&#39; ersetzt
-## Warning: vorhergehender Import durch &#39;utils::installed.packages&#39; während
-## des Ladens von &#39;GGally&#39; ersetzt
-## Warning: vorhergehender Import durch &#39;utils::str&#39; während des Ladens von
-## &#39;GGally&#39; ersetzt
-## Warning: vorhergehender Import durch &#39;stats::filter&#39; während des Ladens von
-## &#39;BioViz&#39; ersetzt
-## Warning: vorhergehender Import durch &#39;stats::lag&#39; während des Ladens von
-## &#39;BioViz&#39; ersetzt
 library(reshape2)
-## Warning: Paket &#39;reshape2&#39; wurde unter R Version 3.2.5 erstellt
 library(ggplot2)
-## Warning: Paket &#39;ggplot2&#39; wurde unter R Version 3.2.5 erstellt
 data(fiveClass)
 Y &lt;- fiveClass$Class
 X &lt;- fiveClass[, 2:ncol(fiveClass)]</code></pre>

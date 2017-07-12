@@ -15,7 +15,7 @@ knitr::opts_chunk$set(collapse = TRUE)
 ```
 
 ## Generate Data
-```{r dataset, tidy=FALSE}
+```{r dataset, tidy=FALSE, , warning=FALSE}
 library(BioViz)
 library(reshape2)
 library(ggplot2)

@@ -69,7 +69,7 @@
         
       </ul>
 
-      <div class="summary">Generate Data library(BioViz) ## Warning: vorhergehender Import durch &#39;utils::capture.output&#39; während des ## Ladens von &#39;GGally&#39; ersetzt ## Warning: vorhergehender Import durch &#39;utils::head&#39; während des Ladens von ## &#39;GGally&#39; ersetzt ## Warning: vorhergehender Import durch &#39;utils::installed.packages&#39; während ## des Ladens von &#39;GGally&#39; ersetzt ## Warning: vorhergehender Import durch &#39;utils::str&#39; während des Ladens von ## &#39;GGally&#39; ersetzt ## Warning: vorhergehender Import durch &#39;stats::filter&#39; während des Ladens von ## &#39;BioViz&#39; ersetzt ## Warning: vorhergehender Import durch &#39;stats::lag&#39; während des Ladens von ## &#39;BioViz&#39; ersetzt library(reshape2) ## Warning: Paket &#39;reshape2&#39; wurde unter R Version 3.</div>
+      <div class="summary">Generate Data library(BioViz) library(reshape2) library(ggplot2) n=7 df &lt;- data.frame(Dose1=exp((1/2)*1:n), Dose2=exp((1/3)*1:n), Dose3=exp((1/4)*1:n), Dose4=exp((1/5)*1:n), Dose5=exp((1/6)*1:n), Dose6=exp((1/7)*1:n), Visit=1:n) df &lt;- melt(df, id=c(&quot;Visit&quot;)) colnames(df) &lt;- c(&quot;Visit&quot;, &quot;Dose&quot;, &quot;Measure&quot;)   Lineplot with Errorbars general.lineplot(df, upper.err=1, lower.err=1, var.type=&quot;errorbar&quot;) ## Warning: Ignoring unknown aesthetics: fill  Lineplot with Errorbars and log transformed y-axis general.lineplot(df, upper.err=1, lower.err=1, var.type=&quot;errorbar&quot;, y.log10trans = T) ## Warning: Ignoring unknown aesthetics: fill  Facetted Lineplot general.lineplot(df, by=&quot;Dose&quot;, facet.row=3, upper.err=1, lower.err=1, var.type=&quot;errorbar&quot;, y.log10trans = T) ## Warning: Ignoring unknown aesthetics: fill  Lineplot with Error Ribbons general.</div>
     </div>
   </a>
 </article>
@@ -88,7 +88,8 @@
         
       </ul>
 
-      <div class="summary">Load data library(BioViz) ## Warning: vorhergehender Import durch &#39;utils::capture.output&#39; während des ## Ladens von &#39;GGally&#39; ersetzt ## Warning: vorhergehender Import durch &#39;utils::head&#39; während des Ladens von ## &#39;GGally&#39; ersetzt ## Warning: vorhergehender Import durch &#39;utils::installed.packages&#39; während ## des Ladens von &#39;GGally&#39; ersetzt ## Warning: vorhergehender Import durch &#39;utils::str&#39; während des Ladens von ## &#39;GGally&#39; ersetzt ## Warning: vorhergehender Import durch &#39;stats::filter&#39; während des Ladens von ## &#39;BioViz&#39; ersetzt ## Warning: vorhergehender Import durch &#39;stats::lag&#39; während des Ladens von ## &#39;BioViz&#39; ersetzt library(reshape2) ## Warning: Paket &#39;reshape2&#39; wurde unter R Version 3.</div>
+      <div class="summary">Component Plot The components of the PCA dimensionality reduction will be displayed in a pairs plot. Each of the components are plottet against each other.
+ The lower diagonal shows the data points projected to the respective two dimensional component space. The upper diagonal shows a contour plot of the data projected the respective two dimensional component space. The diagonal shows a density plot of the projection of variables to a principal component axis.</div>
     </div>
   </a>
 </article>

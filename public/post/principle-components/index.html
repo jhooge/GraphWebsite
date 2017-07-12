@@ -22,21 +22,21 @@
     <title>Principle Components - BioViz Graph Gallery</title>
     
 
-<meta name="description" content="Load data library(BioViz) ## Warning: vorhergehender Import durch &amp;#39;utils::capture.output&amp;#39; während des ## Ladens von &amp;#39;GGally&amp;#39; ersetzt ## Warning: vorhergehender Import durch &amp;#39;utils::head&amp;#39; während des Ladens von ## &amp;#39;GGally&amp;#39; ersetzt ## Warning: vorhergehender Import durch &amp;#39;utils::installed.packages&amp;#39; während ## des Ladens von &amp;#39;GGally&amp;#39; ersetzt ## Warning: vorhergehender Import durch &amp;#39;utils::str&amp;#39; während des Ladens von ## &amp;#39;GGally&amp;#39; ersetzt ## Warning: vorhergehender Import durch &amp;#39;stats::filter&amp;#39; während des Ladens von ## &amp;#39;BioViz&amp;#39; ersetzt ## Warning: vorhergehender Import durch &amp;#39;stats::lag&amp;#39; während des Ladens von ## &amp;#39;BioViz&amp;#39; ersetzt library(reshape2) ## Warning: Paket &amp;#39;reshape2&amp;#39; wurde unter R Version 3.">
+<meta name="description" content="Component Plot The components of the PCA dimensionality reduction will be displayed in a pairs plot. Each of the components are plottet against each other. The lower diagonal shows the data points projected to the respective two dimensional component space. The upper diagonal shows a contour plot of the data projected the respective two dimensional component space. The diagonal shows a density plot of the projection of variables to a principal component axis.">
 
 <meta property="og:title" content="Principle Components - BioViz Graph Gallery">
 <meta property="og:type" content="article">
 <meta property="og:url" content="/post/principle-components/">
 <meta property="og:image" content="/images/default.png">
 <meta property="og:site_name" content="BioViz Graph Gallery">
-<meta property="og:description" content="Load data library(BioViz) ## Warning: vorhergehender Import durch &amp;#39;utils::capture.output&amp;#39; während des ## Ladens von &amp;#39;GGally&amp;#39; ersetzt ## Warning: vorhergehender Import durch &amp;#39;utils::head&amp;#39; während des Ladens von ## &amp;#39;GGally&amp;#39; ersetzt ## Warning: vorhergehender Import durch &amp;#39;utils::installed.packages&amp;#39; während ## des Ladens von &amp;#39;GGally&amp;#39; ersetzt ## Warning: vorhergehender Import durch &amp;#39;utils::str&amp;#39; während des Ladens von ## &amp;#39;GGally&amp;#39; ersetzt ## Warning: vorhergehender Import durch &amp;#39;stats::filter&amp;#39; während des Ladens von ## &amp;#39;BioViz&amp;#39; ersetzt ## Warning: vorhergehender Import durch &amp;#39;stats::lag&amp;#39; während des Ladens von ## &amp;#39;BioViz&amp;#39; ersetzt library(reshape2) ## Warning: Paket &amp;#39;reshape2&amp;#39; wurde unter R Version 3.">
+<meta property="og:description" content="Component Plot The components of the PCA dimensionality reduction will be displayed in a pairs plot. Each of the components are plottet against each other. The lower diagonal shows the data points projected to the respective two dimensional component space. The upper diagonal shows a contour plot of the data projected the respective two dimensional component space. The diagonal shows a density plot of the projection of variables to a principal component axis.">
 <meta property="og:locale" content="ja_JP">
 
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="BioViz Graph Gallery">
 <meta name="twitter:url" content="/post/principle-components/">
 <meta name="twitter:title" content="Principle Components - BioViz Graph Gallery">
-<meta name="twitter:description" content="Load data library(BioViz) ## Warning: vorhergehender Import durch &amp;#39;utils::capture.output&amp;#39; während des ## Ladens von &amp;#39;GGally&amp;#39; ersetzt ## Warning: vorhergehender Import durch &amp;#39;utils::head&amp;#39; während des Ladens von ## &amp;#39;GGally&amp;#39; ersetzt ## Warning: vorhergehender Import durch &amp;#39;utils::installed.packages&amp;#39; während ## des Ladens von &amp;#39;GGally&amp;#39; ersetzt ## Warning: vorhergehender Import durch &amp;#39;utils::str&amp;#39; während des Ladens von ## &amp;#39;GGally&amp;#39; ersetzt ## Warning: vorhergehender Import durch &amp;#39;stats::filter&amp;#39; während des Ladens von ## &amp;#39;BioViz&amp;#39; ersetzt ## Warning: vorhergehender Import durch &amp;#39;stats::lag&amp;#39; während des Ladens von ## &amp;#39;BioViz&amp;#39; ersetzt library(reshape2) ## Warning: Paket &amp;#39;reshape2&amp;#39; wurde unter R Version 3.">
+<meta name="twitter:description" content="Component Plot The components of the PCA dimensionality reduction will be displayed in a pairs plot. Each of the components are plottet against each other. The lower diagonal shows the data points projected to the respective two dimensional component space. The upper diagonal shows a contour plot of the data projected the respective two dimensional component space. The diagonal shows a density plot of the projection of variables to a principal component axis.">
 <meta name="twitter:image" content="/images/default.png">
 
 
@@ -71,7 +71,8 @@
         "height": 60
       }
     },
-    "description": "Load data library(BioViz) ## Warning: vorhergehender Import durch &#39;utils::capture.output&#39; während des ## Ladens von &#39;GGally&#39; ersetzt ## Warning: vorhergehender Import durch &#39;utils::head&#39; während des Ladens von ## &#39;GGally&#39; ersetzt ## Warning: vorhergehender Import durch &#39;utils::installed.packages&#39; während ## des Ladens von &#39;GGally&#39; ersetzt ## Warning: vorhergehender Import durch &#39;utils::str&#39; während des Ladens von ## &#39;GGally&#39; ersetzt ## Warning: vorhergehender Import durch &#39;stats::filter&#39; während des Ladens von ## &#39;BioViz&#39; ersetzt ## Warning: vorhergehender Import durch &#39;stats::lag&#39; während des Ladens von ## &#39;BioViz&#39; ersetzt library(reshape2) ## Warning: Paket &#39;reshape2&#39; wurde unter R Version 3."
+    "description": "Component Plot The components of the PCA dimensionality reduction will be displayed in a pairs plot. Each of the components are plottet against each other.
+ The lower diagonal shows the data points projected to the respective two dimensional component space. The upper diagonal shows a contour plot of the data projected the respective two dimensional component space. The diagonal shows a density plot of the projection of variables to a principal component axis."
   }
 </script>
 
@@ -128,25 +129,20 @@
 
   
 
-  <div class="article-body"><div id="load-data" class="section level2">
+  <div class="article-body"><div id="component-plot" class="section level2">
+<h2>Component Plot</h2>
+<p>The components of the PCA dimensionality reduction will be displayed in a pairs plot. Each of the components are plottet against each other.</p>
+<ul>
+<li>The lower diagonal shows the data points projected to the respective two dimensional component space.</li>
+<li>The upper diagonal shows a contour plot of the data projected the respective two dimensional component space.</li>
+<li>The diagonal shows a density plot of the projection of variables to a principal component axis.</li>
+</ul>
+</div>
+<div id="load-data" class="section level2">
 <h2>Load data</h2>
 <pre class="r"><code>library(BioViz)
-## Warning: vorhergehender Import durch &#39;utils::capture.output&#39; während des
-## Ladens von &#39;GGally&#39; ersetzt
-## Warning: vorhergehender Import durch &#39;utils::head&#39; während des Ladens von
-## &#39;GGally&#39; ersetzt
-## Warning: vorhergehender Import durch &#39;utils::installed.packages&#39; während
-## des Ladens von &#39;GGally&#39; ersetzt
-## Warning: vorhergehender Import durch &#39;utils::str&#39; während des Ladens von
-## &#39;GGally&#39; ersetzt
-## Warning: vorhergehender Import durch &#39;stats::filter&#39; während des Ladens von
-## &#39;BioViz&#39; ersetzt
-## Warning: vorhergehender Import durch &#39;stats::lag&#39; während des Ladens von
-## &#39;BioViz&#39; ersetzt
 library(reshape2)
-## Warning: Paket &#39;reshape2&#39; wurde unter R Version 3.2.5 erstellt
 library(ggplot2)
-## Warning: Paket &#39;ggplot2&#39; wurde unter R Version 3.2.5 erstellt
 data(fiveClass)
 Y &lt;- fiveClass$Class
 X &lt;- fiveClass[, 2:ncol(fiveClass)]</code></pre>

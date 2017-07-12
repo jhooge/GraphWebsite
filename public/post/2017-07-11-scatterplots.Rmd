@@ -16,7 +16,7 @@ knitr::opts_chunk$set(collapse = TRUE)
 
 A scatter plot (also called a scatter graph, scatter chart, scattergram, or scatter diagram) is a type of plot or mathematical diagram using Cartesian coordinates to display values for typically two variables for a set of data. If the points are color-coded, one additional variable can be displayed. The data is displayed as a collection of points, each having the value of one variable determining the position on the horizontal axis and the value of the other variable determining the position on the vertical axis.
 
-```{r scatter_plot, tidy=FALSE}
+```{r scatter_plot, tidy=FALSE, warning=FALSE}
 library(BioViz)
 n <- 500
 x <- rnorm(n)

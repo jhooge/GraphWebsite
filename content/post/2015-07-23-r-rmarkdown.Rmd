@@ -18,7 +18,7 @@ knitr::opts_chunk$set(collapse = TRUE)
 A volcano plot is a type of scatter-plot that is used to quickly identify changes in large data sets composed of replicate data. It plots significance versus fold-change on the y and x axes, respectively. These plots are increasingly common in omic experiments such as genomics, proteomics, and metabolomics where one often has a list of many thousands of replicate data points between two conditions and one wishes to quickly identify the most meaningful changes. A volcano plot combines a measure of statistical significance from a statistical test (e.g., a p value from an ANOVA model) with the magnitude of the change, enabling quick visual identification of those data-points (genes, etc.) that display large magnitude changes that are also statistically significant.
 
 ## Simple
-```{r simple, tidy=FALSE}
+```{r simple, tidy=FALSE, warning=FALSE}
 library(BioViz)
 data(iPSC)
 general.volcano_plot(iPSC)

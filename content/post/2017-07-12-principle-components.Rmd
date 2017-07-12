@@ -14,8 +14,16 @@ draft: no
 knitr::opts_chunk$set(collapse = TRUE)
 ```
 
+## Component Plot
+The components of the PCA dimensionality reduction will be displayed in a pairs plot. Each
+of the components are plottet against each other. 
+
+- The lower diagonal shows the data points projected to the respective two dimensional component space.
+- The upper diagonal shows a contour plot of the data projected the respective two dimensional component space.
+- The diagonal shows a density plot of the projection of variables to a principal component axis.
+
 ## Load data
-```{r dataset, tidy=FALSE}
+```{r dataset, tidy=FALSE, warning=FALSE}
 library(BioViz)
 library(reshape2)
 library(ggplot2)
