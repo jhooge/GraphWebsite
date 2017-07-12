@@ -6,10 +6,19 @@
     <description>Recent content in Tags on BioViz Graph Gallery</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 12 Jul 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 07 Jul 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Author</title>
+      <link>/tags/author/</link>
+      <pubDate>Fri, 07 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/author/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Exploration</title>
@@ -30,6 +39,15 @@
     </item>
     
     <item>
+      <title>Installation</title>
+      <link>/tags/installation/</link>
+      <pubDate>Fri, 07 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/installation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>P Value</title>
       <link>/tags/p-value/</link>
       <pubDate>Fri, 07 Jul 2017 00:00:00 +0000</pubDate>
@@ -44,6 +62,15 @@
       <pubDate>Fri, 07 Jul 2017 00:00:00 +0000</pubDate>
       
       <guid>/tags/significance/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Usage</title>
+      <link>/tags/usage/</link>
+      <pubDate>Fri, 07 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/usage/</guid>
       <description></description>
     </item>
     

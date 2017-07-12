@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Usage on BioViz Graph Gallery</title>
+    <link>/tags/usage/</link>
+    <description>Recent content in Usage on BioViz Graph Gallery</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 07 Jul 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/usage/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>About</title>
+      <link>/post/about/</link>
+      <pubDate>Fri, 07 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/post/about/</guid>
+      <description>Description BioViz is an R package, which includes a number of visualization functions for the day-to-day work in biomarker identification. These include general visualizations (i.e. Scatter-, Line-, Densityplots and Histograms), but also more specific ones for modeling or time series.
+Be aware however that this package is still under heavy development and the code as well as the interfaces will change frequently. Neither has this package been published on CRAN and therefore has not yet undergone any quality control other than my own common sense.</description>
+    </item>
+    
+  </channel>
+</rss>
