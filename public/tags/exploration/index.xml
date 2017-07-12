@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Exploration on BioViz Graph Gallery</title>
-    <link>http://bioviz.netlify.com/tags/exploration/</link>
+    <link>/tags/exploration/</link>
     <description>Recent content in Exploration on BioViz Graph Gallery</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 11 Jul 2017 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://bioviz.netlify.com/tags/exploration/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/exploration/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Scatterplots</title>
-      <link>http://bioviz.netlify.com/post/scatterplot/</link>
+      <link>/post/scatterplot/</link>
       <pubDate>Tue, 11 Jul 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://bioviz.netlify.com/post/scatterplot/</guid>
+      <guid>/post/scatterplot/</guid>
       <description>Definition A scatter plot (also called a scatter graph, scatter chart, scattergram, or scatter diagram) is a type of plot or mathematical diagram using Cartesian coordinates to display values for typically two variables for a set of data. If the points are color-coded, one additional variable can be displayed. The data is displayed as a collection of points, each having the value of one variable determining the position on the horizontal axis and the value of the other variable determining the position on the vertical axis.</description>
     </item>
     
