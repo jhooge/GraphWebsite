@@ -1,0 +1,41 @@
+---
+title: Principle Components
+author: Jens Hooge
+date: '2017-07-12'
+slug: principle-components
+categories:
+  - dimensionality_reduction
+tags:
+  - exploration
+draft: no
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(collapse = TRUE)
+```
+
+## Load data
+```{r dataset, tidy=FALSE}
+library(BioViz)
+library(reshape2)
+library(ggplot2)
+data(fiveClass)
+Y <- fiveClass$Class
+X <- fiveClass[, 2:ncol(fiveClass)]
+```
+
+## Default Pairs Plot of the First 3 Principal Components
+```{r errorbars, tidy=FALSE}
+#' dimred.plot_pca(X)
+dimred.plot_pca(X)
+```
+
+## Pairs Plot of the First 3 Principal Components Labeled by Class Vector
+```{r error_transform, tidy=FALSE}
+dimred.plot_pca(X, Y)
+```
+
+## Varying the Number of Components
+```{r facetted, tidy=FALSE}
+dimred.plot_pca(X, Y, ncomp=5)
+```
